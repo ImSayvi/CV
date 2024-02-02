@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 15px 0px;
+    background: #017398;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -100px;
+}
+
+.navbar .logo a span{
+    color: #017398;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #017398;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #0db5ec;
+}
+
+/* stylowanie strony glownej */
+
+.home{
+    display: flex;
+    background: url("img/background.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: #0e7698;
+    font-weight: 500;
+}
+
+
+/* stylowanie sekcji o mnie */
+section{
+    padding: 100px 0;
+}
+.about, .education, .skills, .experience{
+    font-family: 'Poppins', sans-serif;
+}
+
+section .tittle{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+section .tittle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #017398;
+    transform: translateX(-50%);
+}
+
+
+.about .about-content .left img{
+    
+    width: 550px;
+    object-fit: cover;
+    border-radius: 6px;
+    
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content, .education .education-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #017398;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    text-align: justify;   
+    display: inline-block;
+    background-color: #017398;
+    color: #fff;
+    font-size: 20px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #017398;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.about .about-content .right a:hover{
+    color: #017398;
+    background: none;
+}
+
+
+.education, .experience{
+    color: #fff;
+    background: #111;
+}
+
+.education .education-content .card{
+    width: calc(33% - 20px);
+    height: 400px;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.education .education-content .card:hover{
+    background:#017398;
+}
+
+.education .education-content .card .box{
+    transition: all 0.3s ease;
+    padding-top: 5%;
+    display: block;
+}
+
+.education .education-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.education .education-content .card img{
+    height: 100px;
+    width: auto;
+}
+
+.education .education-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+
+}
+
+/* .education .education-content .card{
+    /* height: auto; 
+} */
+
+
+/* .skills .skills-content .column{
+    width: calc(50% - 30px);
+} */
+
+.skills .skills-content .top-text .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.skills .skills-content .bottom-text .skill-box {
+    margin-bottom: 15px;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+    margin-left: -20%;
+    max-width: 800px;
+    position: relative;
+}
+
+.skills .skills-content .bottom-text .label {
+    font-weight: 500;
+    font-size: 18px;
+
+    position: relative;
+    padding: 10px;
+    border-bottom:solid #017398;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .bottom-text .label::before{
+    content: "+";
+    padding-right: 5px;
+    font-size: 1.5em;
+
+    
+}
+
+.skills .skills-content .bottom-text .label:hover {
+    background-color: #017398;
+    border-radius: 6px;
+    color: #fff;
+
+}
+
+.skills .skills-content .bottom-text .active .label::before{
+    content: "-";
+}
+
+
+.skills .skills-content .bottom-text .info {
+    text-align: justify;
+    position: relative;
+    background-color: #e5f2f6;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    height: 0;
+    overflow-y: auto;
+}
+
+.skills .skills-content .bottom-text .active .info {
+    height: 105%;
+    padding: 10px;
+}
+
+.experience .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.experience .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #017398;
+}
