@@ -424,7 +424,7 @@ justify-content: center;
 
 
 .hobby-description p{
-    
+    margin-bottom: 50px;
     font-weight: normal;
     font-size: 16px;
 }
@@ -444,7 +444,7 @@ justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     max-width: 100%;
-    margin: 0 auto;
+    margin-top: -20px;
     gap: 20px;
     list-style: none;
 }
@@ -453,7 +453,7 @@ justify-content: center;
     background: #e5f2f6;
     border-bottom: 3px solid #017398;
     padding: 50px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     border-radius: 6px;
     text-align: center;
     justify-content: center;
@@ -569,13 +569,29 @@ justify-content: center;
     cursor: pointer;
 }
 
+.hobby-modal-body h2{
+    font-size: 1.2em;
+    
+}
+
+.hobby-modal-body a {
+    text-decoration: none;
+    color: #0db5ec;
+    transition: .3s ease;
+  }
+
+  .hobby-modal-body a:hover{
+    color: #316892;
+    
+  } 
+
 .hobby-modal-body h3{
     font-size: 2em;
 }
 
 .hobby-modal-body h4{
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: normal;
     margin: 15px 0 10px;
 }
 
@@ -583,14 +599,58 @@ justify-content: center;
     margin-top: 15px;
 }
 
-.hobby-modal-body ul li i{
-    color: var(--second-color);
+
+.swiper-slide .img-card{
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
+.swiper-slide .img-card .overlay{
+    transition: 1s ease;
+}
 
+.swiper-slide .img-card:hover .overlay{
+    z-index: 777;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 0.7);
+    border-radius: 10px;
+}
 
+.swiper-slide .img-card .info{
+    z-index: 777;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: white;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+    text-align: justify;
+}
 
+.swiper-slide .img-card:hover .info{
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.neon {
+    margin-top: 50px;
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+      
+  }
 
 
 @media (max-width: 1240px){
