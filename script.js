@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             navbar.classList.remove("sticky");
         }
+
+        
     });
 });
 
@@ -63,3 +65,71 @@ for (i = 0; i<accordion.length; i++){
         this.classList.toggle("active")
     })
 }
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    centeredSlidesBounds: true,
+    spaceBetween: 10,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },     breakpoints: {
+        780: {
+          slidesPerView: 2,
+        },
+        1103: {
+          slidesPerView: 3,
+        },
+        // 1304: {
+        //   slidesPerView: 4,
+        // },
+      },  
+        autoplay: {
+        delay: 2000,
+        disableOnInteraction: false, 
+        pauseOnMouseEnter: true
+      }
+  });
+
+
+  var swiper = new Swiper(".hobby-swiper", {
+    loop: true,
+    pagination: {
+      el: ".hobby-pagination",
+      clickable: true,
+    },  
+     navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+     },   
+  });
+
+
+  $('.menu-btn').click(function(){
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  });
+
+  const hobbyModals = document.querySelectorAll('.hobby-modal');
+  const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+  const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+
+
+  var modal = function(modalClick){
+    hobbyModals[modalClick].classList.add('active');
+  }
+
+  learnMoreBtns.forEach((learnMoreBtn, i) => {
+    learnMoreBtn.addEventListener('click', () => {
+        modal(i);
+    });
+  });
+
+  modalCloseBtns.forEach((modalCloseBtns)=>{
+    modalCloseBtns.addEventListener('click', () => {
+        hobbyModals.forEach((modalView) => {
+            modalView.classList.remove("active");
+        });
+    });
+  });
