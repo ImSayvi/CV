@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Julia Sparzak</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/script.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -24,9 +26,12 @@
                 <li><a href="#education">Wykształcenie</a></li>
                 <li><a href="#skills">Umiejętności</a></li>
                 <li><a href="#experience">Doświadczenie</a></li>
+                <li><a href="#hobby">Hobby</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
-
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -78,16 +83,18 @@
                         <div class="text">Akademia Nauk Stosowanych</div>
                         <p>Instytut Informatyki Stosowanej, studium zaoczne</p>
                         <br>
-                        <p>10.2023 - obecnie</p>
+                        <p class="extra">10.2023 - obecnie</p>
                     </div>
 
                     <div class="box" id="AnsAlt" style="display: none;">
                         <img src="img/ans.png" alt="Akademia Nauk Stosowanych">
-                        <p>Spodziewam się praktycznego zastosowania wiedzy z zakresu informatyki w środowisku pracy,
-                            która zawsze będzie miała wspólny czynnik z komputerami. Ponadto, tok studiów zakłada,
-                            że student powinien na zaliczenie wykonać aplikację/program użyteczny dla firmy w której
-                            pracuje,
-                            co może korzystnie wpłynąć na komfort firmy.</p>
+                        <p>Dawne zainteresowanie informatyką skłoniło mnie do pogłębiania wiedzy w tej dziedzinie. Moim
+                            celem jest <b class="extra">rozwój zawodowy</b> na rynku pracy, gdzie będę mogła realizować
+                            tą pasje, <b class="extra">rozwijać się i
+                                osiągać satysfakcję</b> z wykonywanych zadań. Spodziewam się zdobyć cenne doświadczenie
+                            i wiedzę, które
+                            pozwolą mi na dalszy rozwój umiejętności i przyczynią się do osiągania sukcesów zawodowych.
+                        </p>
                     </div>
                 </div>
 
@@ -99,12 +106,13 @@
                         <br>
                         <p>Uzyskany tytuł: magistrat</p>
                         <br>
-                        <p>10.2018 - 07.2023</p>
+                        <p class="extra">10.2018 - 07.2023</p>
                     </div>
 
                     <div class="box" id="UgAlt" style="display: none;">
-                        <p>Moja praca magistersja pt. <b> "Analiza pochodzenia i wzorców dyspersji samców wilka szarego
-                            rekolonizujących zachodnią Polskę"</b>
+                        <p>Moja praca magisterska pt. <b class="extra"> "Analiza pochodzenia i wzorców dyspersji samców
+                                wilka szarego
+                                rekolonizujących zachodnią Polskę"</b>
                             ściśle opierała się na pracy laboratoryjnej, dzięki czemu oprócz szerokiej wiedzy
                             biologicznej udało mi się opanować podstawy
                             obsługi sprzętu laboratorynjnego. Praca polegała na znalezieniu prób wilczych odchodów w
@@ -117,16 +125,17 @@
                     <div class="box" id="IVlo">
                         <img src="img/IVlo.png" alt="IV LO w Elblagu">
                         <div class="text">IV liceum ogólnokształcące w Elblągu</div>
-                        <p>profil matematyczno-geograficzno-informatyczny</p>
-                        <br>09.2015 - 06.2018</p>
+                        <p>profil matematyczno-geograficzno-informatyczny</p><br>
+                        <p class="extra">09.2015 - 06.2018</p>
                     </div>
 
                     <div class="box" id="IVloAlt" style="display: none;">
                         <img src="img/IVlo.png" alt="IV LO w Elblagu"> <br>
                         <p>Podczas nauki w szkole maturalnej, oprócz zdobycia solidnych podstaw wiedzy,
                             doskonaliłam umiejętność efektywnego zarządzania czasem. Ta nabyta zdolność,
-                            w połączeniu z zaangażowaniem w naukę, zaowocowała otrzymaniem <b>stypendium prezesa
-                            Rady Ministrów za wybitne osiągnięcia w nauce</b> podczas zakończenia edukacji.</p>
+                            w połączeniu z zaangażowaniem w naukę, zaowocowała otrzymaniem <b class="extra">stypendium
+                                prezesa
+                                Rady Ministrów za wybitne osiągnięcia w nauce</b> podczas zakończenia edukacji.</p>
                     </div>
                 </div>
 
@@ -147,6 +156,52 @@
                 </div><br>
 
                 <div class="bottom-text">
+
+
+                    <div class="skill-box">
+                        <div class="label">podstawy programowania JavaScript, C, PHP, HTML, CSS</div>
+                        <div class="info">
+                            <p>Znam podstawowe struktury danych, umiem tworzyć proste funkcje oraz manipulować
+                                elementami interfejsu użytkownika. Ponadto, mam zdolność do projektowania i stylizacji
+                                stron internetowych przy użyciu HTML i CSS, dbając o estetykę. Moje
+                                umiejętności w zakresie programowania obejmują także rozumienie podstawowych koncepcji
+                                związanych z logiką programowania i strukturą danych w języku C, JavaScript oraz
+                                podstawy PHP.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="label">biegła znajomość internetu i programów Microsoft Office (Word, PowerPoint,
+                            Excel), programu do
+                            obróbki graficznej GIMP, Adobe Photoshop, Corel</div>
+                        <div class="info">
+                            <p>Bezproblemowo korzystam z pakietu Office oraz potrafię przeprowadzić proste obróbki
+                                graficzne za pomocą programów gimp oraz photoshop.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="label">zdolność analitycznego myślenia</div>
+                        <div class="info">
+                            <p>Potrafię analizować złożone sytuacje, identyfikować kluczowe elementy oraz wyciągać
+                                wnioski, co przekłada się na efektywną pracę w dynamicznym środowisku. Moje
+                                podejście analityczne wspiera również umiejętność skutecznego planowania i realizacji
+                                projektów.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="label">płynny angielski w mowie i piśmie (C1)</div>
+                        <div class="info">
+                            <p>Posługuję się płynnie językiem angielskim zarówno w mowie, jak i piśmie na poziomie C1
+                                (co potfierdza zdobyty certyfikat).
+                                Posiadam umiejętność swobodnej komunikacji w różnorodnych sytuacjach, a także biegłą
+                                zdolność redagowania dokumentów oraz prowadzenia rozmów w języku angielskim. Posiadam
+                                praktyczne zastosowanie języka za granicą.
+                            </p>
+                        </div>
+                    </div>
+
 
                     <div class="skill-box">
                         <div class="label">obsługa transmisyjnego mikroskopu elektronowego JEOL JEM-2100 oraz zdolność
@@ -207,46 +262,6 @@
                         </div>
                     </div>
 
-                    <div class="skill-box">
-                        <div class="label">biegła znajomość internetu i programów Microsoft Office (Word, PowerPoint,
-                            Excel), programu do
-                            obróbki graficznej GIMP, Corel</div>
-                        <div class="info">
-                            <p>Bezproblemowo korzystam z pakietu Office oraz potrafię przeprowadzić proste obróbki
-                                graficzne za pomocą programu Gimp.</p>
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="label">podstawy programowania JavaScript, C, HTML, CSS</div>
-                        <div class="info">
-                            <p>Znam podstawowe struktury danych, umiem tworzyć proste funkcje oraz manipulować
-                                elementami interfejsu użytkownika. Ponadto, mam zdolność do projektowania i stylizacji
-                                stron internetowych przy użyciu HTML i CSS, dbając o estetykę. Moje
-                                umiejętności w zakresie programowania obejmują także rozumienie podstawowych koncepcji
-                                związanych z logiką programowania i strukturą danych w języku C</p>
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="label">płynny angielski w mowie i piśmie (C1)</div>
-                        <div class="info">
-                            <p>Posługuję się płynnie językiem angielskim zarówno w mowie, jak i piśmie na poziomie C1 (co potfierdza zdobyty certyfikat).
-                                Posiadam umiejętność swobodnej komunikacji w różnorodnych sytuacjach, a także biegłą
-                                zdolność redagowania dokumentów oraz prowadzenia rozmów  w języku angielskim. Posiadam praktyczne zastosowanie języka za granicą.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="label">zdolność analitycznego myślenia</div>
-                        <div class="info">
-                            <p>Potrafię analizować złożone sytuacje, identyfikować kluczowe elementy oraz wyciągać
-                                wnioski, co przekłada się na efektywną pracę w dynamicznym środowisku. Moje
-                                podejście analityczne wspiera również umiejętność skutecznego planowania i realizacji
-                                projektów.</p>
-                        </div>
-                    </div>
 
                     <div class="skill-box">
                         <div class="label">prototypowanie, planowanie i przebieg eksperymentalnych badań</div>
@@ -287,80 +302,460 @@
     </section>
 
     <section class="experience" id="experience">
-        <div class="max-width">
+        <div class="not-max-width"><!-- class="max-width" -->
             <h2 class="tittle">Moje doświadczenie</h2>
-            <div class="carousel"> 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/kombinat.jpg" alt="Kombinat Konopny">
-                        <div class="text"><b>Kombinat Konopny SA</b>, Gronowo Górne</div>
-                        <p>Czerwiec 2023 - Styczeń 2024</p>
-                        <p>Specjalista ds. badań i rozwoju, laborant</p>
-                    </div>  
-                </div>
+            <div class="swiper mySwiper carousel">
+                <div class="swiper-wrapper">
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/eurofins.jpg" alt="Eurofins Environment Testing Polska">
-                        <div class="text"><b>Eurofins Environment Testing Polska</b>, Malbork</div>
-                        <p>Wrzesień 2021 - Maj 2023</p>
-                        <p>Laborant, technik TEM, wsparcie techniczne, kontrola
-                            jakości</p>
-                    </div>  
-                </div>
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/gsse.png" alt="Graniczna Stacja Sanitarno-Epidemiologiczna w Elblągu">
+                            <div class="text"><b>Graniczna Stacja Sanitarno-Epidemiologiczna w
+                                    Elblągu</b><span>Elbląg</span></div>
+                            <p> Marzec 2024 - aktualnie</p>
+                            <p>Stażystka w elbląskim sanepidzie</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/kuse.jpg" alt="Kuse Ranczo">
-                        <div class="text"><b>Kuse Ranczo</b>, Zajączkowo</div>
-                        <p>Kwiecień - Sierpień 2021</p>
-                        <p>Praktyki w stajni</p>
-                    </div>  
-                </div>
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/kombinat.jpg" alt="Kombinat Konopny">
+                            <div class="text"><b>Kombinat Konopny SA</b><span>Gronowo Górne</span> </div>
+                            <p>Czerwiec 2023 - Styczeń 2024</p>
+                            <p>Specjalista ds. badań i rozwoju, laborant</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/shortridge.jpg" alt="Shortridge">
-                        <div class="text"><b>Shortridge</b>, Workington, UK</div>
-                        <p>Sierpień 2019</p>
-                        <p>Praca na sortowni, pakowni i przy maglu pralni
-                            przemysłowej</p>
-                    </div>  
-                </div>
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/eurofins.png" alt="Eurofins Environment Testing Polska">
+                            <div class="text"><b>Eurofins Environment Testing Polska</b><span>Malbork</span> </div>
+                            <p>Wrzesień 2021 - Maj 2023</p>
+                            <p>Laborant, technik TEM, wsparcie techniczne, kontrola
+                                jakości</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/crown.jpg" alt="Crown Bevcan">
-                        <div class="text"><b>Crown Bevcan</b>, Carlisle, UK</div>
-                        <p>Lipiec 2019</p>
-                        <p>Praca przy nadzorowaniu pracy maszyny oraz na pakowni
-                            w fabryce puszek</p>
-                    </div>  
-                </div>
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/kuse.jpg" alt="Kuse Ranczo">
+                            <div class="text"><b>Kuse Ranczo</b><span>Zajączkowo</span> </div>
+                            <p>Kwiecień - Sierpień 2021</p>
+                            <p>Praktyki w stajni</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/riverside.jpg" alt="Riverside Recruitment">
-                        <div class="text"><b>Riverside Recruitment</b>, Carlisle, UK</div>
-                        <p>Czerwiec 2019</p>
-                        <p>Sprzątanie pensjonatów i domków wypoczynkowych w
-                            obrębie Lake District pod opieką agencji Riverside
-                            Recruitment w Carlisle</p>
-                    </div>  
-                </div>
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/shortridge.jpg" alt="Shortridge">
+                            <div class="text"><b>Shortridge</b><span>Workington, UK</span> </div>
+                            <p>Sierpień 2019</p>
+                            <p>Praca na sortowni, pakowni i przy maglu pralni
+                                przemysłowej</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <div class="box">
-                        <img src="img/sodexo.jpg" alt="Sodexo">
-                        <div class="text"><b>Sodexo</b>, Carlisle, UK</div>
-                        <p>Maj 2018</p>
-                        <p>Praca w jadłodalni- pomoc kuchenna</p>
-                    </div>  
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/crown.jpg" alt="Crown Bevcan">
+                            <div class="text"><b>Crown Bevcan</b><span>Carlisle, UK</span> </div>
+                            <p>Lipiec 2019</p>
+                            <p>Praca przy nadzorowaniu pracy maszyny oraz na pakowni
+                                w fabryce puszek</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/riverside.jpg" alt="Riverside Recruitment">
+                            <div class="text"><b>Riverside Recruitment</b><span> Carlisle, UK</span></div>
+                            <p>Czerwiec 2019</p>
+                            <p>Sprzątanie pensjonatów i domków wypoczynkowych w
+                                obrębie Lake District pod opieką agencji Riverside
+                                Recruitment w Carlisle</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="box">
+                            <img src="img/sodexo.jpg" alt="Sodexo">
+                            <div class="text"><b>Sodexo</b><span> Carlisle, UK</span></div>
+                            <p>Maj 2018</p>
+                            <p>Praca w jadłodalni- pomoc kuchenna</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="hobby" id="hobby">
+        <div class="max-width container flex-center">
+            <h2 class="tittle">Hobby & Zainteresowania</h2>
+            <div class="content">
+                <div class="hobby-description">
+                    Czym zajmuję się w wolnym czasie?
+                    <p>Jestem osobą, która chce się stale rozwijać i uczyć nowych rzeczy, nie tylko w kwestii zawodowej.
+                    </p>
+                </div>
+                <ul class="hobby-list">
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programowanie</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+
+                                <div class="swiper hobby-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>E-wallet 2.0</h3>
+                                                    <h2><a href="https://gitlab.com/learning7714005/e-wallet-2.0/"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <h4 class="neon">PHP, JavaScript, CSS, HTML, MySQL</h4>
+                                                    <span>Webowa aplikacja CRUD'owa do zarządzania finansami. Pozwala na
+                                                        wprowadzanie wypłaty, od której odejmuje wydatki obowiązkowe i
+                                                        wyznacza
+                                                        fundusz dzienny, który aktualizuje się każdego dnia. Na stronie
+                                                        głównej
+                                                        aplikacji wprowadza się dzienne transakcje afektujące dzienny
+                                                        budżet, a
+                                                        zakładka wydatków obowiązkowych informuje o pozostałej kwocie do
+                                                        spłaty
+                                                        opłat miesięcznych. Projekt w 100% autorski, własnego wykonania.
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>Handmade</h3>
+                                                    <h2><a href="https://gitlab.com/learning7714005/handmade"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <h4 class="neon">PHP, JavaScript, CSS, HTML, Bootstrap, MySQL, Git
+                                                    </h4>
+                                                    <span>Webowa aplikacja CRUD do kategoryzowania prac
+                                                        rękodzielniczych dla zalogowanych użytkowników (wykorzystanie
+                                                        solenia hasła, hashowania, praca z sesją) Po dodaniu funkcji
+                                                        tagowania, wyszukiwania
+                                                        oraz zagnieżdżania kategorii, aplikacja przekształciła się w
+                                                        narzędzie typu "journal". Projekt miał na celu praktyczne
+                                                        wykorzystanie podstawowej wiedzy o PHP oraz zastosowanie
+                                                        Bootstrapa i naukę pracy z gitem, gdyż projekt był dwuosobowy.
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>Baza danych</h3>
+                                                    <h4 class="neon">C</h4>
+                                                    <h2><a href="https://gitlab.com/learning7714005/data-base-in-c"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <span>Aplikacja napisana w języku C jako projekt zaliczeniowy na
+                                                        przedmiot "Podstawy programowania", za który otrzymałam
+                                                        maksymalną ocenę. Program umożliwia tworzenie, przeglądanie i
+                                                        edytowanie bazy danych wilczych prób, domyślnie zawierającej
+                                                        cztery rekordy. Projekt demonstruje podstawowe umiejętności
+                                                        programowania w C, takie jak operacje na plikach, pętle oraz
+                                                        zarządzanie pamięcią.
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>Psi hotel</h3>
+                                                    <h2><a href="https://gitlab.com/learning7714005/psi-hotel"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <h4 class="neon">HTML, CSS, JavaScript</h4>
+                                                    <span>Witryna statyczna stworzona dla małego biznesu, działająca
+                                                        jako reklama psiego hotelu "Pet Paradise". Projekt miał na celu
+                                                        doskonalenie umiejętności w zakresie HTML, CSS oraz JavaScript,
+                                                        ze szczególnym naciskiem na estetykę i funkcjonalność witryny.
+                                                        Zawiera CSS oraz interaktywne elementy JavaScript, które
+                                                        wzbogacają doświadczenia użytkownika.
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>E-wallet</h3>
+                                                    <h2><a href="https://gitlab.com/learning7714005/e-wallet"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <h4 class="neon">HTML, CSS, JavaScript</h4>
+                                                    <span>Pierwsza wersja aplikacji E-wallet, inspirowana internetowymi
+                                                        kursami, jednak z zastosowaniem własnej logiki i rozwiązań.
+                                                        Projekt służył nauce JavaScript i nie jest zintegrowany z żadną
+                                                        bazą danych. Skupia się na praktycznym wykorzystaniu języka
+                                                        JavaScript w kontekście aplikacji do zarządzania finansami.
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <div class="overlay"></div>
+                                                <div class="info">
+                                                    <h3>Magic 8ball</h3>
+                                                    <h2><a href="https://gitlab.com/learning7714005/magic-8ball"><i
+                                                                class="fa-brands fa-gitlab"></i> Zobacz repo</a> </h2>
+                                                    <h4 class="neon">HTML, CSS, JavaScript</h4>
+                                                    <span>Aplikacja "Magic 8ball", inspirowana internetowymi kursami,
+                                                        wykorzystuje HTML, CSS i JavaScript do stworzenia interaktywnej
+                                                        wersji popularnej zabawki wróżbiarskiej. Umożliwia zadawanie
+                                                        pytań i otrzymywanie losowych odpowiedzi, wzbogacając
+                                                        doświadczenie użytkownika dzięki atrakcyjnemu interfejsowi i
+                                                        prostym animacjom. Projekt miał na celu praktyczne zastosowanie
+                                                        umiejętności w zakresie frontendowego programowania oraz
+                                                        kreatywne podejście do projektowania aplikacji webowych.
+
+                                                    </span><br>
+                                                </div>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="hobby-pagination"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                            <h3>Rękodzieło</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+
+                                <div class="swiper hobby-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <h3>Szydełkowanie</h3>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <h3>Makrama</h3>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <h3>String-art</h3>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <h3>Jewelry-craft</h3>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="img-card">
+                                                <h3>Sugar-gifts</h3>
+                                                <img src="img/ans.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="hobby-pagination"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-horse-head"></i>
+                            <h3>Jazda konna</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Jazda konna</h3>
+                                        <img src="img/ans.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-user-ninja"></i>
+                            <h3>Kickbox</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Kickbox</h3>
+                                        <img src="img/ans.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-person-skating"></i>
+                            <h3>Rolki</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Jazda na rolkach</h3>
+                                        <img src="img/ans.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <h3>Siatkówka</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Siatkówka</h3>
+                                        <img src="img/ans.png" alt="">
+                                        <p>W każdej szkole, do której uczęszczałam, byłam (i nadal jestem) członkiem
+                                            amatorskich drużyn siatkarskich. Dodatkowo, z przyjemnością gram w siatkówkę
+                                            rekreacyjnie, "podwórkowo", dla czystej rozrywki i radości z gry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-tent"></i>
+                            <h3>Camping</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Camping</h3>
+                                        <img src="img/ans.png" alt="">
+                                        <p>W wolnym czasie lubię spędzać czas na łonie natury, pod namiotem. Dni
+                                            poświęcam na obserwację przyrody, co wynika z mojego zamiłowania do
+                                            biologii. Noce spędzam na obserwacjach astronomicznych, korzystając z
+                                            lornetki lub teleskopu, podziwiając gwiazdy i inne obiekty na niebie.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hobby-container">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <h3>Motocykle</h3>
+                            <div class="learn-more-btn">Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="hobby-modal flex-center">
+                            <div class="hobby-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <div class="swiper-slide">
+                                    <div class="img-card">
+                                        <h3>Podróże motocyklem</h3>
+                                        <img src="img/ans.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </section>
 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
