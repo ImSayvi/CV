@@ -133,3 +133,29 @@ var swiper = new Swiper(".mySwiper", {
         });
     });
   });
+
+  const contactForm = document.getElementById('contact-form');
+  const contactMessage = document.getElementById('contact-message');
+  
+  const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_t6dkk8n', 'template_jm0fwc1', contactForm, 'N7FPUGi7WwKRxNh80')
+          .then(() => {
+              contactMessage.textContent = "Wiadomość została wysłana :)";
+  
+              setTimeout(() => {
+                  contactMessage.textContent = '';
+              }, 5000);
+  
+              contactForm.reset();
+          })
+          .catch((error) => {
+              contactMessage.textContent = "Wystąpił błąd. Spróbuj ponownie później.";
+              console.error('Błąd przy wysyłaniu emaila:', error);
+          });
+  }
+  
+  contactForm.addEventListener('submit', sendEmail);
+  
+  contactForm.addEventListener('submit', sendEmail)
