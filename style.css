@@ -62,6 +62,7 @@ html{
     transition: all 0.3s ease;
 }
 
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -127,6 +128,25 @@ html{
     font-weight: 500;
 }
 
+.home .logo img{
+    max-height: 200px;
+}
+
+.home .socials{
+    display: flex;
+    font-size: 30px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.home .socials a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.home .socials a:hover {
+    color: #0e7698;
+}
 
 /* stylowanie sekcji o mnie */
 section{
@@ -772,7 +792,22 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+footer .socials{
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+    gap: 15px;
+    justify-content: center;
+}
 
+footer .socials a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+footer .socials a:hover {
+    color: #0e7698;
+}
 
 
 
@@ -871,12 +906,18 @@ footer span a:hover{
         margin-bottom: 35px;
     }
 
+    
+
 }
 
 @media (max-width: 690px){
     .max-width{
         padding: 0 23px; 
      }
+
+     .home .logo img{
+        margin-left: 80px;
+    }
 
     .home .home-content .text-2{
         font-size: 60px;
@@ -892,7 +933,10 @@ footer span a:hover{
 
     }
 
-   
+    .swiper-slide .img-card .info{
+        font-size: 12px;
+    }
+
 
 }
  

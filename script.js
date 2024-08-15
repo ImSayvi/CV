@@ -138,23 +138,27 @@ var swiper = new Swiper(".mySwiper", {
   const contactMessage = document.getElementById('contact-message');
   
   const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_t6dkk8n', 'template_jm0fwc1', contactForm, 'N7FPUGi7WwKRxNh80')
-          .then(() => {
-              contactMessage.textContent = "Wiadomość została wysłana :)";
-  
-              setTimeout(() => {
-                  contactMessage.textContent = '';
-              }, 5000);
-  
-              contactForm.reset();
-          })
-          .catch((error) => {
-              contactMessage.textContent = "Wystąpił błąd. Spróbuj ponownie później.";
-              console.error('Błąd przy wysyłaniu emaila:', error);
-          });
-  }
+    e.preventDefault();
+
+    console.log("Wysyłanie formularza...");
+    
+    emailjs.sendForm('service_t6dkk8n', 'template_yumcvn7', contactForm, 'N7FPUGi7WwKRxNh80')
+        .then(() => {
+            console.log("Wiadomość została wysłana.");
+            contactMessage.textContent = "Wiadomość została wysłana :)";
+            
+            setTimeout(() => {
+                contactMessage.textContent = '';
+            }, 5000);
+            
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error('Błąd przy wysyłaniu emaila:', error);
+            contactMessage.textContent = "Wystąpił błąd. Spróbuj ponownie później.";
+        });
+}
+
   
   contactForm.addEventListener('submit', sendEmail);
   
