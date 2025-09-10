@@ -198,6 +198,10 @@ section .tittle::before{
     justify-content: space-between;
 }
 
+.skills .skills-content{
+    justify-content: center;
+}
+
 .about .about-content .right{
     width: 55%;
 }
@@ -306,7 +310,7 @@ section .tittle::before{
 
 .skills .skills-content .bottom-text .skill-box {
     margin-bottom: 15px;
-    margin-left: -20%;
+    /* margin-left: -20%; */
     max-width: 800px;
 }
 
@@ -355,6 +359,24 @@ section .tittle::before{
 .skills .skills-content .bottom-text .active .info {
     height: 105%;
     padding: 10px;
+}
+
+.skills .skills-content .bottom-text .skill-card {
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #f9fcfd;
+    border: 1px solid #cce5eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.skills .skills-content .bottom-text .skill-card .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #017398;
+    border-left: 5px solid #017398;
+    padding-left: 10px;
 }
 
 .carousel{
