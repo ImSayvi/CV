@@ -85,11 +85,7 @@ var swiper = new Swiper(".mySwiper", {
         //   slidesPerView: 4,
         // },
       },  
-        autoplay: {
-        delay: 2000,
-        disableOnInteraction: false, 
-        pauseOnMouseEnter: true
-      }
+        autoplay: false
   });
 
 

@@ -580,7 +580,9 @@ justify-content: center;
     width: 100%;
     height: auto;
     max-width: 100%;
-    object-fit: cover;
+    max-height: 70vh;
+    object-fit: contain;
+    
 }
 
 .hobby-modal.active{
@@ -592,7 +594,9 @@ justify-content: center;
     position: relative;
     background:  #ffffff;
     width: 100%;
-    max-width: 600px;
+    max-width: 950px;
+    max-height: 90vh; 
+    overflow-y: auto; 
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
@@ -602,6 +606,7 @@ justify-content: center;
     text-align: center;
     justify-content: center;
  }
+ 
 
  .hobby-modal.active .hobby-modal-body{
     transform: translateY(0);
@@ -963,3 +968,309 @@ footer .socials a:hover {
 
 }
  
+/* ============================================================
+   ROZSZERZENIE — wersja techniczna (Stack / Projekty / Statystyki)
+   ============================================================ */
+
+/* --- Statystyki w sekcji O mnie --- */
+.about-stats{
+    display: flex;
+    gap: 30px;
+    margin: 25px 0 10px;
+    flex-wrap: wrap;
+}
+
+.about-stats .stat{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-stats .stat-number{
+    font-size: 32px;
+    font-weight: 700;
+    color: #017398;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.1;
+}
+
+.about-stats .stat-label{
+    font-size: 13px;
+    color: #555;
+    max-width: 150px;
+    margin-top: 4px;
+}
+
+/* --- Siatka stacku technologicznego --- */
+.stack-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.stack-category{
+    background: #f9fcfd;
+    border: 1px solid #cce5eb;
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.stack-category:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(1,115,152,0.15);
+    border-color: #017398;
+}
+
+.stack-category h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: #017398;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stack-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge{
+    display: inline-block;
+    background: #e5f2f6;
+    color: #017398;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 13px;
+    border-radius: 20px;
+    border: 1px solid #b9dde6;
+    transition: all 0.25s ease;
+}
+
+.stack-category:hover .badge,
+.project-card:hover .badge{
+    /* subtle emphasis on hover of parent */
+}
+
+.badge:hover{
+    background: #017398;
+    color: #fff;
+    border-color: #017398;
+}
+
+/* --- Sekcja Projekty --- */
+.projects{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+ 
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+ 
+.project-card{
+    background: #fff;
+    border: 1px solid #e2eef1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 30px rgba(1,115,152,0.18);
+}
+ 
+.project-banner{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #fff;
+}
+
+.banner-logo{
+    max-height: 85px;  
+    max-width: 70%;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+}
+
+.banner-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+ 
+.banner-1{ background: linear-gradient(135deg, #017398, #0db5ec); }
+.banner-2{ background: linear-gradient(135deg, #004860, #017398); }
+.banner-3{ background: linear-gradient(135deg, #0db5ec, #01b0a8); }
+ 
+.project-body{
+    padding: 24px 26px 26px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+ 
+.project-body h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 10px;
+}
+ 
+.project-body p{
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+ 
+.project-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+ 
+.project-tags .badge{
+    font-size: 12px;
+    padding: 5px 11px;
+}
+ 
+.project-links{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+ 
+.project-links a{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 2px solid #017398;
+    color: #017398;
+    transition: all 0.3s ease;
+}
+ 
+.project-links a:first-child{
+    background: #017398;
+    color: #fff;
+}
+ 
+.project-links a:first-child:hover{
+    background: #0db5ec;
+    border-color: #0db5ec;
+}
+ 
+.project-links a:last-child:hover{
+    background: #017398;
+    color: #fff;
+}
+ 
+.projects-more{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 14px;
+    color: #555;
+}
+ 
+.projects-more a{
+    color: #017398;
+    font-weight: 600;
+    border-bottom: 1px solid #017398;
+}
+ 
+.projects-more a:hover{
+    color: #0db5ec;
+    border-color: #0db5ec;
+}
+ 
+@media (max-width: 690px){
+    .about-stats{
+        gap: 20px;
+    }
+    .about-stats .stat-label{
+        max-width: 120px;
+    }
+}
+ 
+/* --- Przycisk "Zrzuty ekranu" w kartach projektów --- */
+.project-links .project-screens-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 2px solid #017398;
+    color: #017398;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.project-links .project-screens-btn:hover{
+    background: #017398;
+    color: #fff;
+}
+ 
+/* --- Placeholder, gdy zrzut ekranu jeszcze nie został dodany do img/ --- */
+.swiper-slide.screenshot-placeholder .img-card{
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e5f2f6, #cce5eb);
+    border-radius: 10px;
+    text-align: center;
+}
+ 
+.swiper-slide.screenshot-placeholder .img-card img{
+    display: none;
+}
+ 
+.swiper-slide.screenshot-placeholder .img-card::after{
+    content: "Zrzut ekranu wkrótce";
+    color: #017398;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.hobby-modal-body h3{
+    font-family: 'Ubuntu', sans-serif;
+    color: #017398;
+}
+@media (max-width: 690px){
+    .about-stats{
+        gap: 20px;
+    }
+    .about-stats .stat-label{
+        max-width: 120px;
+    }
+}
