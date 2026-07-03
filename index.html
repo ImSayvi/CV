@@ -39,14 +39,19 @@
           <a href="#">Curriculum<span> Vitae</span></a>
         </div>
         <ul class="menu">
-          <li><a href="#home">Strona główna</a></li>
-          <li><a href="#about">O mnie</a></li>
-          <li><a href="#education">Wykształcenie</a></li>
-          <li><a href="#skills">Stack</a></li>
-          <li><a href="#experience">Doświadczenie</a></li>
-          <li><a href="#projects">Projekty</a></li>
-          <li><a href="#hobby">Hobby</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#home" data-i18n="navHome">Strona główna</a></li>
+          <li><a href="#about" data-i18n="navAbout">O mnie</a></li>
+          <li><a href="#education" data-i18n="navEducation">Wykształcenie</a></li>
+          <li><a href="#skills" data-i18n="navSkills">Stack</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Doświadczenie</a></li>
+          <li><a href="#projects" data-i18n="navProjects">Projekty</a></li>
+          <li><a href="#hobby" data-i18n="navHobby">Hobby</a></li>
+          <li><a href="#contact" data-i18n="navContact">Kontakt</a></li>
+          <li class="lang-switch">
+            <a href="#" class="lang-option active" data-lang="pl">PL</a>
+            <span>|</span>
+            <a href="#" class="lang-option" data-lang="en">EN</a>
+          </li>
         </ul>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -58,9 +63,9 @@
       <div class="max-width">
         <div class="home-content">
           <div class="logo"><img src="img/logowhite.png" alt="" /></div>
-          <div class="text-1">Hej! Nazywam się</div>
+          <div class="text-1" data-i18n="homeText1">Hej! Nazywam się</div>
           <div class="text-2">Julia Sparzak</div>
-          <div class="text-3">I mogę być <span>Waszym pracownikiem!</span></div>
+          <div class="text-3" data-i18n="homeText3">I mogę być <span>Waszym pracownikiem!</span></div>
         </div>
         <div class="socials">
           <a href="https://www.facebook.com/SayviXD"
@@ -81,16 +86,16 @@
 
     <section class="about" id="about">
       <div class="max-width">
-        <h2 class="tittle">O mnie</h2>
+        <h2 class="tittle" data-i18n="aboutTitle">O mnie</h2>
         <div class="about-content">
           <div class="column left">
             <img src="img/profile2.png" alt="" />
           </div>
           <div class="column right">
-            <div class="text">
+            <div class="text" data-i18n="aboutHeadline">
               Fullstack developer <span>z korzeniami w laboratorium</span>
             </div>
-            <p>
+            <p data-i18n="aboutParagraph">
               Do IT trafiłam z laboratoriów badawczych, gdzie precyzja i
               analityczne podejście były podstawą codziennej pracy - dziś
               stosuję te nawyki w kodzie. Od ponad półtora roku pracuję zawodowo
@@ -101,9 +106,9 @@
               rzeczach, które faktycznie działają.
             </p>
             <br />
-            <p>Data urodzenia: 1 luty 1999 r.</p>
+            <p data-i18n="aboutBirthdate">Data urodzenia: 1 luty 1999 r.</p>
 
-            <a href="CVJuliaSparzak.pdf" download>Pobierz CV</a>
+            <a href="CVJuliaSparzak.pdf" download data-i18n="aboutDownloadCV">Pobierz CV</a>
           </div>
         </div>
       </div>
@@ -111,20 +116,20 @@
 
     <section class="education" id="education">
       <div class="max-width">
-        <h2 class="tittle">Wykształcenie</h2>
+        <h2 class="tittle" data-i18n="eduTitle">Wykształcenie</h2>
         <div class="education-content">
           <div class="card">
             <div class="box" id="Ans">
               <img src="img/ans.png" alt="Akademia Nauk Stosowanych" />
               <div class="text">Akademia Nauk Stosowanych</div>
-              <p>Instytut Informatyki Stosowanej, studia zaoczne</p>
+              <p data-i18n="eduAnsProgram">Instytut Informatyki Stosowanej, studia zaoczne</p>
               <br />
-              <p class="extra">10.2023 - obecnie</p>
+              <p class="extra" data-i18n="eduAnsDates">10.2023 - obecnie</p>
             </div>
 
             <div class="box" id="AnsAlt" style="display: none">
               <img src="img/ans.png" alt="Akademia Nauk Stosowanych" />
-              <p>
+              <p data-i18n="eduAnsAlt">
                 Dawne zainteresowanie informatyką skłoniło mnie do pogłębiania
                 wiedzy w tej dziedzinie. Moim celem jest
                 <b class="extra">rozwój zawodowy</b> na rynku pracy, gdzie będę
@@ -140,16 +145,16 @@
           <div class="card">
             <div class="box" id="Ug">
               <img src="img/UG.png" alt="Uniwersytet Gdanski" />
-              <div class="text">Uniwersytet Gdański</div>
-              <p>Wydział Biologii, studia dzienne</p>
+              <div class="text" data-i18n="eduUgName">Uniwersytet Gdański</div>
+              <p data-i18n="eduUgProgram">Wydział Biologii, studia dzienne</p>
               <br />
-              <p>Uzyskany tytuł: magister</p>
+              <p data-i18n="eduUgDegree">Uzyskany tytuł: magister</p>
               <br />
               <p class="extra">10.2018 - 07.2023</p>
             </div>
 
             <div class="box" id="UgAlt" style="display: none">
-              <p>
+              <p data-i18n="eduUgAlt">
                 Moja praca magisterska pt.
                 <b class="extra">
                   "Analiza pochodzenia i wzorców dyspersji samców wilka szarego
@@ -168,15 +173,15 @@
           <div class="card">
             <div class="box" id="IVlo">
               <img src="img/IVlo.png" alt="IV LO w Elblagu" />
-              <div class="text">IV liceum ogólnokształcące w Elblągu</div>
-              <p>profil matematyczno-geograficzno-informatyczny</p>
+              <div class="text" data-i18n="eduLoName">IV liceum ogólnokształcące w Elblągu</div>
+              <p data-i18n="eduLoProfile">profil matematyczno-geograficzno-informatyczny</p>
               <br />
               <p class="extra">09.2015 - 06.2018</p>
             </div>
 
             <div class="box" id="IVloAlt" style="display: none">
               <img src="img/IVlo.png" alt="IV LO w Elblagu" /> <br />
-              <p>
+              <p data-i18n="eduLoAlt">
                 Podczas nauki w szkole maturalnej, oprócz zdobycia solidnych
                 podstaw wiedzy, doskonaliłam umiejętność efektywnego zarządzania
                 czasem. Ta nabyta zdolność, w połączeniu z zaangażowaniem w
@@ -195,13 +200,13 @@
 
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="tittle">Stack technologiczny</h2>
+        <h2 class="tittle" data-i18n="skillsTitle">Stack technologiczny</h2>
         <div class="skills-content">
           <br />
 
           <div class="stack-grid">
             <div class="stack-category">
-              <h3><i class="fa-solid fa-code"></i> Języki</h3>
+              <h3><i class="fa-solid fa-code"></i> <span data-i18n="skillLangs">Języki</span></h3>
               <div class="stack-badges">
                 <span class="badge">PHP</span>
                 <span class="badge">JavaScript</span>
@@ -233,7 +238,7 @@
             </div>
 
             <div class="stack-category">
-              <h3><i class="fa-solid fa-database"></i> Bazy danych</h3>
+              <h3><i class="fa-solid fa-database"></i> <span data-i18n="skillDb">Bazy danych</span></h3>
               <div class="stack-badges">
                 <span class="badge">PostgreSQL</span>
                 <span class="badge">MSSQL</span>
@@ -244,7 +249,7 @@
             </div>
 
             <div class="stack-category">
-              <h3><i class="fa-solid fa-gears"></i> DevOps &amp; narzędzia</h3>
+              <h3><i class="fa-solid fa-gears"></i> <span data-i18n="skillDevops">DevOps &amp; narzędzia</span></h3>
               <div class="stack-badges">
                 <span class="badge">Git</span>
                 <span class="badge">Docker</span>
@@ -255,7 +260,7 @@
             </div>
 
             <div class="stack-category">
-              <h3><i class="fa-solid fa-plug"></i> Integracje</h3>
+              <h3><i class="fa-solid fa-plug"></i> <span data-i18n="skillIntegrations">Integracje</span></h3>
               <div class="stack-badges">
                 <span class="badge">Supabase</span>
                 <span class="badge">Stripe API</span>
@@ -267,11 +272,11 @@
 
           <div class="bottom-text" style="margin-top: 50px">
             <div class="skill-card">
-              <h3 class="card-title">Kompetencje uzupełniające</h3>
+              <h3 class="card-title" data-i18n="skillsCardTitle">Kompetencje uzupełniające</h3>
               <div class="skill-box">
-                <div class="label">Cykl życia oprogramowania (SDLC)</div>
+                <div class="label" data-i18n="skillLabel1">Cykl życia oprogramowania (SDLC)</div>
                 <div class="info">
-                  <p>
+                  <p data-i18n="skillInfo1">
                     Rozumiem kolejne etapy tworzenia aplikacji: od analizy
                     wymagań i projektowania, przez implementację i testowanie,
                     po wdrożenie i utrzymanie systemu - i pracuję zgodnie z tym
@@ -280,9 +285,9 @@
                 </div>
               </div>
               <div class="skill-box">
-                <div class="label">Współpraca z użytkownikiem końcowym</div>
+                <div class="label" data-i18n="skillLabel2">Współpraca z użytkownikiem końcowym</div>
                 <div class="info">
-                  <p>
+                  <p data-i18n="skillInfo2">
                     Mam doświadczenie w zbieraniu wymagań, wsparciu technicznym
                     i analizie zgłoszeń użytkowników, co pomaga mi projektować
                     rozwiązania faktycznie dopasowane do potrzeb odbiorców.
@@ -290,9 +295,9 @@
                 </div>
               </div>
               <div class="skill-box">
-                <div class="label">Dokumentacja techniczna</div>
+                <div class="label" data-i18n="skillLabel3">Dokumentacja techniczna</div>
                 <div class="info">
-                  <p>
+                  <p data-i18n="skillInfo3">
                     Przygotowuję dokumentację architektury, struktur baz danych
                     i instrukcje obsługi - dbając o czytelność, która ułatwia
                     wdrażanie nowych osób do projektu.
@@ -300,9 +305,9 @@
                 </div>
               </div>
               <div class="skill-box">
-                <div class="label">Analityczne myślenie z laboratorium</div>
+                <div class="label" data-i18n="skillLabel4">Analityczne myślenie z laboratorium</div>
                 <div class="info">
-                  <p>
+                  <p data-i18n="skillInfo4">
                     Kilka lat pracy w laboratoriach badawczych (m.in. obsługa
                     mikroskopu TEM JEOL JEM-2100, chromatografu cieczowego,
                     praca zgodnie z normą PN-EN ISO/IEC 17025) nauczyło mnie
@@ -317,254 +322,19 @@
       </div>
     </section>
 
-    <!-- <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="tittle">Umiejętności</h2>
-            <div class="skills-content">
-                <div class="top-text">
-                    <div class="text"> Zdolności, które nabyłam dzięki doświadczeniu</div>
-                    <p>Każda z umiejętności jest poparta praktyką na moich poprzednich stanowiskach pracy.
-                        Aby dowiedzieć się więcej, kliknij na poszczególną umiejętność.</p>
-                </div><br>
-
-                <div class="bottom-text">
-
-    
-                    <div class="skill-card">
-                        <h3 class="card-title">IT</h3>
-                        <div class="skill-box">
-                            <div class="label">podstawy programowania JavaScript, C, PHP, HTML, CSS, SQL, React</div>
-                            <div class="info">
-                                <p>Znam podstawowe struktury danych, umiem tworzyć proste funkcje oraz manipulować
-                                    elementami interfejsu użytkownika. Potrafię projektować i stylizować
-                                    strony internetowe przy użyciu HTML i CSS, dbając o estetykę i funkcjonalność.
-                                    Moje umiejętności obejmują także rozumienie koncepcji logiki programowania
-                                    i struktury danych w językach C, JavaScript oraz podstawy PHP.
-                                    Znam podstawy React, co umożliwia mi tworzenie komponentów i dynamicznych elementów
-                                    interfejsu.
-                                    Posiadam również doświadczenie w pracy z bazami danych SQL, w tym korzystaniu z
-                                    narzędzi
-                                    pgAdmin i DBeaver do zarządzania, analizy i edycji danych.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">znajomość cyklu życia oprogramowania (SDLC)</div>
-                            <div class="info">
-                                <p>Posiadam wiedzę na temat kolejnych etapów cyklu życia oprogramowania:
-                                    od analizy wymagań i projektowania, poprzez implementację, testowanie
-                                    i wdrożenie, aż po utrzymanie i rozwój systemu.
-                                    Dzięki temu potrafię lepiej rozumieć proces tworzenia aplikacji
-                                    oraz rolę zespołów projektowych na poszczególnych etapach.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">doświadczenie we współpracy z użytkownikiem końcowym</div>
-                            <div class="info">
-                                <p>Posiadam doświadczenie w bezpośredniej współpracy z użytkownikami końcowymi
-                                    tworzonego oprogramowania.
-                                    Obejmuje to zbieranie wymagań, wsparcie techniczne oraz
-                                    analizę zgłoszeń i sugestii. Dzięki temu potrafię lepiej dostosowywać rozwiązania
-                                    do realnych potrzeb odbiorców, dbając o ich użyteczność i intuicyjność.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="skill-box">
-                            <div class="label">tworzenie dokumentacji</div>
-                            <div class="info">
-                                <p>Potrafię przygotowywać dokumentację techniczną oraz użytkową,
-                                    obejmującą opisy architektury systemu, struktur baz danych,
-                                    działanie aplikacji i instrukcje obsługi.
-                                    Dbam o czytelność i spójność dokumentów, co ułatwia pracę zespołu,
-                                    wdrażanie nowych osób oraz dalszy rozwój projektów.
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="skill-box">
-                            <div class="label">opieka nad social media</div>
-                            <div class="info">
-                                <p>Posiadam doświadczenie w obszarze opieki nad social media, gdzie efektywnie
-                                    wspierałam
-                                    zarządzanie
-                                    różnorodnymi platformami, dbając o zasięg, zaangażowanie i reputację marki. Moje
-                                    umiejętności obejmują tworzenie i planowanie atrakcyjnych treści, analizę statystyk
-                                    oraz monitorowanie trendów branżowych.
-                                    Dzięki kreatywnemu podejściu do budowania społeczności online, udało mi się
-                                    skutecznie
-                                    wspierać promowanie marki oraz budować relacje z klientami i obserwatorami. Posiadam
-                                    również
-                                    zdolność do szybkiego reagowania na zmiany w środowisku social media, co pozwala
-                                    utrzymać aktualność i skuteczność strategii komunikacyjnych.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">biegła znajomość internetu i programów Microsoft Office (Word,
-                                PowerPoint,
-                                Excel), programu do obróbki graficznej GIMP, Adobe Photoshop, Corel</div>
-                            <div class="info">
-                                <p>Bezproblemowo korzystam z pakietu Office oraz potrafię przeprowadzić proste obróbki
-                                    graficzne za pomocą programów gimp oraz photoshop.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">podstawy obsługi GIS, QGIS</div>
-                            <div class="info">
-                                <p>Posiadam podstawową znajomość systemów informacji geograficznej (GIS)
-                                    oraz programu QGIS. Potrafię pracować z warstwami przestrzennymi,
-                                    analizować dane geograficzne oraz tworzyć mapy tematyczne.
-                                    Moje umiejętności obejmują także korzystanie z podstawowych narzędzi do analizy
-                                    przestrzennej
-                                    i wizualizacji danych.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-   
-                    <div class="skill-card">
-                        <h3 class="card-title">Laboratorium badawcze</h3>
-                        <div class="skill-box">
-                            <div class="label">obsługa transmisyjnego mikroskopu elektronowego JEOL JEM-2100 oraz
-                                zdolność
-                                radzenia sobie z głównymi usterkami tego sprzętu</div>
-                            <div class="info">
-                                <p> Bardzo dobrze poznałam działanie zaawansowanego sprzętu jakim jest transmisyjny
-                                    mikroskop
-                                    elektronowy JEOL JEM-2100. Oprócz umiejetności pracy na nim i przeprowadzenia
-                                    dokładnych
-                                    analiz (w tym dyfrakcja, spektometria dyspersji energii
-                                    promieniowania rentgenowskiego [EDS] ) potrafię przeprowadzać konserwację tego
-                                    sprzętu
-                                    oraz diagnozować proste usterki i je naprawiać (wymiana filamentu,
-                                    blokujący się holder, malfunkcja programu, regulacja wiązki światła, spadki
-                                    ciśnienia,
-                                    ogólna kontrola działania).</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">obsługa polaryzacyjnego mikroskopu oraz sporządzanie prób</div>
-                            <div class="info">
-                                <p>Posiadam praktyczne doświadczenie w obszarze obsługi polaryzacyjnego mikroskopu.
-                                    Obserwacja dwójłomności,
-                                    pleochroizmu, wygaśnięcia, znaku wydłużenia w świetle spolaryzowanym, kontrola
-                                    czystości
-                                    pudrów i olejów.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">obsługa wysokosprawnego chromatografu cieczowego Shimadzu oraz
-                                sporządzanie
-                                prób</div>
-                            <div class="info">
-                                <p>Mam umiejętność przeprowadzania analizy wysokosprawnej chromatografii
-                                    cieczowej, obejmującej etapy od przygotowania prób, przez prowadzenie sekwencji
-                                    pomiarowej, aż po zakończenie i wyłączenie urządzenia. Posiadam ogólną znajomość
-                                    podstawowych komponentów maszyny oraz zrozumienie zasady działania tej metody
-                                    analitycznej. Moje doświadczenie obejmuje nie tylko operacyjne aspekty
-                                    chromatografii
-                                    cieczowej, ale również umiejętność interpretacji wyników uzyskanych z
-                                    chromatogramów, co
-                                    przyczynia się do skutecznego prowadzenia analiz laboratoryjnych.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">obsługa podstawowego sprzętu laboratoryjnego</div>
-                            <div class="info">
-                                <p>W trakcie pracy zawodowej oraz nauki na studiach zdobyłam dogłębną znajomość obsługi
-                                    podstawowego
-                                    sprzętu laboratoryjnego. Sprawnie operuję pipetami automatycznymi, wagami
-                                    analitycznymi,
-                                    wagosuszarkami, grinderami, wirówkami, łaźniami ultradźwiękowymi, szkłem
-                                    laboratoryjnym,
-                                    pH-metrami itp. Ponadto, przeszłam szkolenie z zakresu naprawy grinderów oraz
-                                    przeprowadzania testów przy użyciu anemometru do oceny wydajności wyciągów.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">praca zgodnie z normą PN-EN ISO/IEC 17025:2018-02</div>
-                            <div class="info">
-                                <p>Znam wymagania tej normy oraz umiem pracować z ściśle określonymi standardami i
-                                    procedurami wskazanymi przez akredytację laboratorium.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">prototypowanie, planowanie i przebieg eksperymentalnych badań</div>
-                            <div class="info">
-                                <p>Posiadam doświadczenie w obszarze prototypowania, planowania i realizacji
-                                    eksperymentalnych badań. Z powodzeniem uczestniczyłam w procesie tworzenia
-                                    prototypów,
-                                    co wymagało kreatywnego podejścia, umiejętności analizy potrzeb użytkowników oraz
-                                    zdolności efektywnego przekładania koncepcji na funkcjonalne rozwiązania. Moje
-                                    umiejętności planowania były kluczowe przy organizacji i nadzorowaniu eksperymentów,
-                                    gdzie skrupulatne przygotowanie oraz ścisła kontrola procesów przyczyniły się do
-                                    uzyskania wiarygodnych wyników. Posiadam również zdolność do interpretacji danych
-                                    eksperymentalnych i wyciągania wniosków, co umożliwia skuteczną adaptację strategii
-                                    badawczych dla osiągnięcia zamierzonych celów.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <h3 class="card-title">Kompetencje ogólne</h3>
-                        <div class="skill-box">
-                            <div class="label">zdolność analitycznego myślenia</div>
-                            <div class="info">
-                                <p>Potrafię analizować złożone sytuacje, identyfikować kluczowe elementy oraz wyciągać
-                                    wnioski, co przekłada się na efektywną pracę w dynamicznym środowisku. Moje
-                                    podejście analityczne wspiera również umiejętność skutecznego planowania i
-                                    realizacji
-                                    projektów.</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <div class="label">płynny angielski w mowie i piśmie (C1)</div>
-                            <div class="info">
-                                <p>Posługuję się płynnie językiem angielskim zarówno w mowie, jak i piśmie na poziomie
-                                    C1
-                                    (co potfierdza zdobyty certyfikat).
-                                    Posiadam umiejętność swobodnej komunikacji w różnorodnych sytuacjach, a także biegłą
-                                    zdolność redagowania dokumentów oraz prowadzenia rozmów w języku angielskim.
-                                    Posiadam
-                                    praktyczne zastosowanie języka za granicą.</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="experience" id="experience">
       <div class="not-max-width">
-        <h2 class="tittle">Moje doświadczenie</h2>
+        <h2 class="tittle" data-i18n="expTitle">Moje doświadczenie</h2>
         <div class="swiper mySwiper carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide card">
               <div class="box">
                 <img src="img/salogo.jpg" alt="SoftArchitect" />
                 <div class="text">
-                  <b>SoftArchitect</b><span>Warszawa</span>
+                  <b>SoftArchitect</b><span data-i18n="exp1City">Warszawa</span>
                 </div>
-                <p>Listopad 2024 - Lipiec 2026</p>
-                <p>
+                <p data-i18n="exp1Date">Listopad 2024 - Lipiec 2026</p>
+                <p data-i18n="exp1Desc">
                   Junior Fullstack Developer - rozwój i utrzymanie aplikacji
                   webowych (PHP, JavaScript, PostgreSQL), praca z autorskim
                   silnikiem skryptowym do ankiet, udział w pełnym cyklu
@@ -583,8 +353,8 @@
                   <b>Graniczna Stacja Sanitarno-Epidemiologiczna</b
                   ><span>Elbląg</span>
                 </div>
-                <p>Marzec 2024 - Październik 2024</p>
-                <p>
+                <p data-i18n="exp2Date">Marzec 2024 - Październik 2024</p>
+                <p data-i18n="exp2Desc">
                   Staż: udział w kontrolach sanitarnych, prowadzenie
                   dokumentacji pokontrolnej, kontakt z podmiotami
                   kontrolowanymi.
@@ -598,8 +368,8 @@
                 <div class="text">
                   <b>Kombinat Konopny SA</b><span>Gronowo Górne</span>
                 </div>
-                <p>Czerwiec 2023 - Styczeń 2024</p>
-                <p>
+                <p data-i18n="exp3Date">Czerwiec 2023 - Styczeń 2024</p>
+                <p data-i18n="exp3Desc">
                   Specjalista ds. badań i rozwoju: planowanie badań
                   laboratoryjnych, obsługa chromatografu cieczowego,
                   opracowywanie dokumentacji technicznej i nowych prototypów.
@@ -616,8 +386,8 @@
                 <div class="text">
                   <b>Eurofins Environment Testing</b><span>Malbork</span>
                 </div>
-                <p>Wrzesień 2021 - Maj 2023</p>
-                <p>
+                <p data-i18n="exp4Date">Wrzesień 2021 - Maj 2023</p>
+                <p data-i18n="exp4Desc">
                   Laborantka / technik TEM: obsługa mikroskopu elektronowego
                   JEOL JEM-2100, kontrola jakości badań, praca zgodnie z ISO/IEC
                   17025.
@@ -631,8 +401,8 @@
                 <div class="text">
                   <b>Kuse Ranczo</b><span>Zajączkowo</span>
                 </div>
-                <p>Kwiecień - Sierpień 2021</p>
-                <p>Praktyki w stajni</p>
+                <p data-i18n="exp5Date">Kwiecień - Sierpień 2021</p>
+                <p data-i18n="exp5Desc">Praktyki w stajni</p>
               </div>
             </div>
 
@@ -642,8 +412,8 @@
                 <div class="text">
                   <b>Shortridge</b><span>Workington, UK</span>
                 </div>
-                <p>Sierpień 2019</p>
-                <p>
+                <p data-i18n="exp6Date">Sierpień 2019</p>
+                <p data-i18n="exp6Desc">
                   Praca na sortowni, pakowni i przy maglu pralni przemysłowej
                 </p>
               </div>
@@ -655,8 +425,8 @@
                 <div class="text">
                   <b>Crown Bevcan</b><span>Carlisle, UK</span>
                 </div>
-                <p>Lipiec 2019</p>
-                <p>
+                <p data-i18n="exp7Date">Lipiec 2019</p>
+                <p data-i18n="exp7Desc">
                   Praca przy nadzorowaniu pracy maszyny oraz na pakowni w
                   fabryce puszek
                 </p>
@@ -669,8 +439,8 @@
                 <div class="text">
                   <b>Riverside Recruitment</b><span> Carlisle, UK</span>
                 </div>
-                <p>Czerwiec 2019</p>
-                <p>
+                <p data-i18n="exp8Date">Czerwiec 2019</p>
+                <p data-i18n="exp8Desc">
                   Sprzątanie pensjonatów i domków wypoczynkowych w obrębie Lake
                   District pod opieką agencji Riverside Recruitment w Carlisle
                 </p>
@@ -681,8 +451,8 @@
               <div class="box">
                 <img src="img/sodexo.jpg" alt="Sodexo" />
                 <div class="text"><b>Sodexo</b><span> Carlisle, UK</span></div>
-                <p>Maj 2018</p>
-                <p>Praca w jadłodalni- pomoc kuchenna</p>
+                <p data-i18n="exp9Date">Maj 2018</p>
+                <p data-i18n="exp9Desc">Praca w jadłodalni- pomoc kuchenna</p>
               </div>
             </div>
           </div>
@@ -693,9 +463,9 @@
 
     <section class="projects" id="projects">
       <div class="max-width">
-        <h2 class="tittle">Projekty</h2>
+        <h2 class="tittle" data-i18n="projectsTitle">Projekty</h2>
         <div class="top-text" style="text-align: center; margin-bottom: 50px">
-          <p>
+          <p data-i18n="projectsIntro">
             Wybrane projekty własne - zaprojektowane, napisane i wdrożone przeze
             mnie od podstaw.
           </p>
@@ -708,7 +478,7 @@
             </div>
             <div class="project-body">
               <h3>SayvMe</h3>
-              <p>
+              <p data-i18n="projSayvMeDesc">
                 Aplikacja webowa do zarządzania budżetem i oszczędnościami -
                 używana przeze mnie na co dzień. Dashboard automatycznie wylicza
                 dzienny budżet na podstawie transakcji, moduł podziału wydatków,
@@ -733,7 +503,7 @@
                   Link</a
                 >
                 <div class="learn-more-btn project-screens-btn">
-                  <i class="fa-solid fa-images"></i> Zrzuty ekranu
+                  <i class="fa-solid fa-images"></i> <span data-i18n="projScreens">Zrzuty ekranu</span>
                 </div>
               </div>
             </div>
@@ -745,7 +515,7 @@
             </div>
             <div class="project-body">
               <h3>Counter</h3>
-              <p>
+              <p data-i18n="projCounterDesc">
                 Panel administracyjny z integracją API dostawcy, automatyzujący
                 codzienną synchronizację cen i stanów magazynowych - z obsługą
                 błędów, historią zmian, systemem ról użytkowników oraz
@@ -767,7 +537,7 @@
                   Link</a
                 >
                 <div class="learn-more-btn project-screens-btn">
-                  <i class="fa-solid fa-images"></i> Zrzuty ekranu
+                  <i class="fa-solid fa-images"></i> <span data-i18n="projScreens">Zrzuty ekranu</span>
                 </div>
               </div>
             </div>
@@ -779,7 +549,7 @@
             </div>
             <div class="project-body">
               <h3>Jagielska</h3>
-              <p>
+              <p data-i18n="projJagielskaDesc">
                 Responsywna strona wizytówkowa dla fotografa - portfolio i
                 oferta usług (śluby, chrzciny, sesje rodzinne, zwierzęta).
                 Zawiera galerię zdjęć oraz przygotowaną pod przyszłą rozbudowę
@@ -804,7 +574,7 @@
                   Link</a
                 >
                 <div class="learn-more-btn project-screens-btn">
-                  <i class="fa-solid fa-images"></i> Zrzuty ekranu
+                  <i class="fa-solid fa-images"></i> <span data-i18n="projScreens">Zrzuty ekranu</span>
                 </div>
               </div>
             </div>
@@ -816,7 +586,7 @@
             </div>
             <div class="project-body">
               <h3>JavnaGra</h3>
-              <p>
+              <p data-i18n="projJavnaGraDesc">
                 Autorska wersja kultowej gry Flappy Bird napisana w Javie - logika gry, kolizje i system punktacji zaimplementowane od zera. Grafiki wygenerowane z pomocą AI i wyedytowane w GIMP-ie.
               </p>
               <div class="project-tags">
@@ -828,7 +598,7 @@
                   GitHub</a
                 >
                 <div class="learn-more-btn project-screens-btn">
-                  <i class="fa-solid fa-images"></i> Zrzuty ekranu
+                  <i class="fa-solid fa-images"></i> <span data-i18n="projScreens">Zrzuty ekranu</span>
                 </div>
               </div>
             </div>
@@ -840,7 +610,7 @@
       <div class="hobby-modal flex-center">
         <div class="hobby-modal-body">
           <i class="fas fa-times modal-close-btn"></i>
-          <h3 style="margin-bottom: 15px">SayvMe - podgląd</h3>
+          <h3 style="margin-bottom: 15px">SayvMe - <span data-i18n="previewWord">podgląd</span></h3>
           <div class="swiper hobby-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -906,7 +676,7 @@
       <div class="hobby-modal flex-center">
         <div class="hobby-modal-body">
           <i class="fas fa-times modal-close-btn"></i>
-          <h3 style="margin-bottom: 15px">Counter - podgląd</h3>
+          <h3 style="margin-bottom: 15px">Counter - <span data-i18n="previewWord">podgląd</span></h3>
           <div class="swiper hobby-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -985,7 +755,7 @@
       <div class="hobby-modal flex-center">
         <div class="hobby-modal-body">
           <i class="fas fa-times modal-close-btn"></i>
-          <h3 style="margin-bottom: 15px">Jagielska - podgląd</h3>
+          <h3 style="margin-bottom: 15px">Jagielska - <span data-i18n="previewWord">podgląd</span></h3>
           <div class="swiper hobby-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -1039,7 +809,7 @@
     <div class="hobby-modal flex-center">
         <div class="hobby-modal-body">
           <i class="fas fa-times modal-close-btn"></i>
-          <h3 style="margin-bottom: 15px">JavnaGra - podgląd</h3>
+          <h3 style="margin-bottom: 15px">JavnaGra - <span data-i18n="previewWord">podgląd</span></h3>
           <div class="swiper hobby-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -1081,11 +851,11 @@
 
     <section class="hobby" id="hobby">
       <div class="max-width container flex-center">
-        <h2 class="tittle">Hobby & Zainteresowania</h2>
+        <h2 class="tittle" data-i18n="hobbyTitle">Hobby & Zainteresowania</h2>
         <div class="content">
           <div class="hobby-description">
-            Czym zajmuję się w wolnym czasie?
-            <p>
+            <span data-i18n="hobbyDescTitle">Czym zajmuję się w wolnym czasie?</span>
+            <p data-i18n="hobbyDescPara">
               Jestem osobą, która chce się stale rozwijać i uczyć nowych rzeczy,
               nie tylko w kwestii zawodowej.
             </p>
@@ -1094,9 +864,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-code"></i>
-                <h3>Programowanie</h3>
+                <h3 data-i18n="hobbyProgramming">Programowanie</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1110,18 +880,18 @@
                         <div class="img-card">
                           <div class="overlay"></div>
                           <div class="info">
-                            <h3>E-wallet 2.0</h3>
+                            <h3 data-i18n="hobbyEwallet2Title">E-wallet 2.0</h3>
                             <h2>
                               <a
                                 href="https://github.com/ImSayvi/e-wallet-2.0/tree/main"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
                             <h4 class="neon">
                               PHP, JavaScript, CSS, HTML, MySQL
                             </h4>
-                            <span
+                            <span data-i18n="hobbyEwallet2Desc"
                               >Webowa aplikacja CRUD'owa do zarządzania
                               finansami. Pozwala na wprowadzanie wypłaty, od
                               której odejmuje wydatki obowiązkowe i wyznacza
@@ -1144,14 +914,14 @@
                             <h3>Handmade</h3>
                             <h2>
                               <a href="https://github.com/ImSayvi/Handmade"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
                             <h4 class="neon">
                               PHP, JavaScript, CSS, HTML, Bootstrap, MySQL, Git
                             </h4>
-                            <span
+                            <span data-i18n="hobbyHandmadeDesc"
                               >Webowa aplikacja CRUD do kategoryzowania prac
                               rękodzielniczych dla zalogowanych użytkowników
                               (wykorzystanie solenia hasła, hashowania, praca z
@@ -1172,15 +942,15 @@
                         <div class="img-card">
                           <div class="overlay"></div>
                           <div class="info">
-                            <h3>Baza danych</h3>
+                            <h3 data-i18n="hobbyDbTitle">Baza danych</h3>
                             <h4 class="neon">C</h4>
                             <h2>
                               <a href="https://github.com/ImSayvi/Data-base"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
-                            <span
+                            <span data-i18n="hobbyDbDesc"
                               >Aplikacja napisana w języku C jako projekt
                               zaliczeniowy na przedmiot "Podstawy
                               programowania", za który otrzymałam maksymalną
@@ -1200,15 +970,15 @@
                         <div class="img-card">
                           <div class="overlay"></div>
                           <div class="info">
-                            <h3>Psi hotel</h3>
+                            <h3 data-i18n="hobbyDogHotelTitle">Psi hotel</h3>
                             <h2>
                               <a href="https://github.com/ImSayvi/PetParadise"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
                             <h4 class="neon">HTML, CSS, JavaScript</h4>
-                            <span
+                            <span data-i18n="hobbyDogHotelDesc"
                               >Witryna statyczna stworzona dla małego biznesu,
                               działająca jako reklama psiego hotelu "Pet
                               Paradise". Projekt miał na celu doskonalenie
@@ -1230,12 +1000,12 @@
                             <h3>E-wallet</h3>
                             <h2>
                               <a href="https://github.com/ImSayvi/e-wallet"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
                             <h4 class="neon">HTML, CSS, JavaScript</h4>
-                            <span
+                            <span data-i18n="hobbyEwalletDesc"
                               >Pierwsza wersja aplikacji E-wallet, inspirowana
                               internetowymi kursami, jednak z zastosowaniem
                               własnej logiki i rozwiązań. Projekt służył nauce
@@ -1256,12 +1026,12 @@
                             <h3>Magic 8ball</h3>
                             <h2>
                               <a href="https://github.com/ImSayvi/Magic-8ball"
-                                ><i class="fa-brands fa-gitlab"></i> Zobacz
-                                repo</a
+                                ><i class="fa-brands fa-gitlab"></i> <span data-i18n="viewRepo">Zobacz
+                                repo</span></a
                               >
                             </h2>
                             <h4 class="neon">HTML, CSS, JavaScript</h4>
-                            <span
+                            <span data-i18n="hobbyMagic8ballDesc"
                               >Aplikacja "Magic 8ball", inspirowana
                               internetowymi kursami, wykorzystuje HTML, CSS i
                               JavaScript do stworzenia interaktywnej wersji
@@ -1290,9 +1060,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-hands-holding-circle"></i>
-                <h3>Rękodzieło</h3>
+                <h3 data-i18n="hobbyCrafts">Rękodzieło</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1304,14 +1074,14 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="img-card">
-                          <h3>Szydełkowanie</h3>
+                          <h3 data-i18n="hobbyCrochet">Szydełkowanie</h3>
                           <img src="img/crochet.jpg" alt="" />
                         </div>
                       </div>
 
                       <div class="swiper-slide">
                         <div class="img-card">
-                          <h3>Makrama</h3>
+                          <h3 data-i18n="hobbyMacrame">Makrama</h3>
                           <img src="img/macrame.jpg" alt="" />
                         </div>
                       </div>
@@ -1348,9 +1118,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-horse-head"></i>
-                <h3>Jazda konna</h3>
+                <h3 data-i18n="hobbyHorseRiding">Jazda konna</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1359,7 +1129,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Jazda konna</h3>
+                      <h3 data-i18n="hobbyHorseRiding">Jazda konna</h3>
                       <img src="img/horse.jpg" alt="" />
                     </div>
                   </div>
@@ -1370,9 +1140,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-user-ninja"></i>
-                <h3>Kickbox</h3>
+                <h3 data-i18n="hobbyKickbox">Kickbox</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1381,7 +1151,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Kickbox</h3>
+                      <h3 data-i18n="hobbyKickbox">Kickbox</h3>
                       <img src="img/kick.jpg" alt="" />
                     </div>
                   </div>
@@ -1392,9 +1162,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-person-skating"></i>
-                <h3>Rolki</h3>
+                <h3 data-i18n="hobbyRollerblading">Rolki</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1403,7 +1173,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Jazda na rolkach</h3>
+                      <h3 data-i18n="hobbyRollerbladeModal">Jazda na rolkach</h3>
                       <video
                         controls
                         autoplay
@@ -1423,9 +1193,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-volleyball"></i>
-                <h3>Siatkówka</h3>
+                <h3 data-i18n="hobbyVolleyball">Siatkówka</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1434,7 +1204,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Siatkówka</h3>
+                      <h3 data-i18n="hobbyVolleyball">Siatkówka</h3>
                       <img src="img/voleyball.jpg" alt="" />
                     </div>
                   </div>
@@ -1445,9 +1215,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-tent"></i>
-                <h3>Camping</h3>
+                <h3 data-i18n="hobbyCamping">Camping</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1456,7 +1226,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Camping</h3>
+                      <h3 data-i18n="hobbyCamping">Camping</h3>
                       <img src="img/camping.jpg" alt="" />
 
                     </div>
@@ -1468,9 +1238,9 @@
             <li class="hobby-container">
               <div class="hobby-card">
                 <i class="fa-solid fa-motorcycle"></i>
-                <h3>Motocykle</h3>
+                <h3 data-i18n="hobbyMotorcycles">Motocykle</h3>
                 <div class="learn-more-btn">
-                  Zobacz więcej <i class="fas fa-long-arrow-alt-right"></i>
+                  <span data-i18n="learnMore">Zobacz więcej</span> <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
               </div>
 
@@ -1479,7 +1249,7 @@
                   <i class="fas fa-times modal-close-btn"></i>
                   <div class="swiper-slide">
                     <div class="img-card">
-                      <h3>Podróże motocyklem</h3>
+                      <h3 data-i18n="hobbyMotoTripsModal">Podróże motocyklem</h3>
                    
                         <img src="img/moto.jpg" alt="" />
                       
@@ -1495,48 +1265,46 @@
 
     <section class="contact" id="contact">
       <div class="max-width">
-        <h2 class="tittle">Kontakt</h2>
+        <h2 class="tittle" data-i18n="contactTitle">Kontakt</h2>
         <div class="contact-content">
           <div class="column left">
-            <div class="text">Skontaktuj się ze mną!</div>
-            <p>
+            <div class="text" data-i18n="contactHeadline">Skontaktuj się ze mną!</div>
+            <p data-i18n="contactPara">
               Dogadajmy dogodny termin i czas na spotkanie.
-              <span>Przed godziną 17:00</span> proszę o kontakt drogą tekstową.
-              Po 17:00 będę mogła odebrać telefon.
             </p>
             <div class="icons">
               <div class="row">
                 <i class="fas fa-user"></i>
                 <div class="info">
-                  <div class="head">Imię</div>
+                  <div class="head" data-i18n="contactLabelName">Imię</div>
                   <div class="sub-title">Julia Sparzak</div>
                 </div>
               </div>
               <div class="row">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="info">
-                  <div class="head">Adres</div>
-                  <div class="sub-title">Polska, Elbląg</div>
+                  <div class="head" data-i18n="contactLabelAddress">Adres</div>
+                  <div class="sub-title" data-i18n="contactAddressValue">Polska, Elbląg</div>
                 </div>
               </div>
               <div class="row">
                 <i class="fas fa-phone"></i>
                 <div class="info">
-                  <div class="head">Telefon</div>
+                  <div class="head" data-i18n="contactLabelPhone">Telefon</div>
                   <div class="sub-title">+48 794 474 440</div>
                 </div>
               </div>
               <div class="row">
                 <i class="fas fa-envelope"></i>
                 <div class="info">
-                  <div class="head">E-mail</div>
+                  <div class="head" data-i18n="contactLabelEmail">E-mail</div>
                   <div class="sub-title">julia.sparzak@gmail.com</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="column right">
-            <div class="text">Napisz do mnie</div>
+            <div class="text" data-i18n="contactFormHeadline">Napisz do mnie</div>
             <form action="#" id="contact-form">
               <div class="fields">
                 <div class="field name">
@@ -1544,6 +1312,7 @@
                     type="text"
                     name="user_name"
                     placeholder="Imię"
+                    data-i18n-placeholder="contactPlaceholderName"
                     required
                   />
                 </div>
@@ -1552,6 +1321,7 @@
                     type="email"
                     name="user_email"
                     placeholder="E-mail"
+                    data-i18n-placeholder="contactPlaceholderEmail"
                     required
                   />
                 </div>
@@ -1561,14 +1331,15 @@
                   type="text"
                   name="email_title"
                   placeholder="Temat"
+                  data-i18n-placeholder="contactPlaceholderSubject"
                   required
                 />
               </div>
               <div class="field textarea">
-                <textarea name="user_message" placeholder="Treść..."></textarea>
+                <textarea name="user_message" placeholder="Treść..." data-i18n-placeholder="contactPlaceholderMessage"></textarea>
               </div>
               <div class="button">
-                <button type="submit">Wyślij</button>
+                <button type="submit" data-i18n="contactSendBtn">Wyślij</button>
               </div>
               <p id="contact-message"></p>
             </form>

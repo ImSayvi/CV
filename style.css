@@ -19,6 +19,11 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0px 80px;
@@ -78,6 +83,28 @@ html{
 
 .navbar .menu li a:hover{
     color: #017398;
+}
+
+.navbar .menu li.lang-switch{
+    margin-left: 15px;
+}
+
+.navbar .menu li.lang-switch a{
+    display: inline-block;
+    margin: 0;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.navbar .menu li.lang-switch a.active{
+    opacity: 1;
+    color: #0db5ec;
+}
+
+.navbar .menu li.lang-switch span{
+    color: #fff;
+    opacity: 0.5;
+    margin: 0 4px;
 }
 
 .navbar.sticky .menu li a:hover{
@@ -675,7 +702,10 @@ justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     margin: 20px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
     color: white;
     transform: translateY(20px);
     opacity: 0;
@@ -891,6 +921,15 @@ footer .socials a:hover {
         font-size: 25px;
     }
 
+    .navbar .menu li.lang-switch{
+        margin-left: 0;
+    }
+
+    .navbar .menu li.lang-switch a{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -965,6 +1004,13 @@ footer .socials a:hover {
         font-size: 12px;
     }
 
+    .stack-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
 
 }
  
