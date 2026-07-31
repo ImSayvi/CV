@@ -101,6 +101,8 @@ const translations = {
       "A responsive landing page for a photographer - portfolio and service offering (weddings, christenings, family sessions, pets). Includes a photo gallery and a cart/login architecture (Supabase + Stripe) prepared for future expansion, currently disabled. Currently runs as a presentational MVP, deployed on Vercel.",
     projJavnaGraDesc:
       "My own take on the iconic Flappy Bird game, written in Java - game logic, collisions, and the scoring system implemented from scratch. Graphics generated with AI assistance and edited in GIMP.",
+    projCalViDesc:
+      "A simple desktop app for planning your day - calendar, tasks, notes, and weather in one place. Month, week, and day views, a daily checklist, freeform notes, and a window lock to guard against accidental changes. Data is stored locally in a JSON file, weather comes from the free Open-Meteo API.",
     projScreens: "Screenshots",
     previewWord: "preview",
 

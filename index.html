@@ -604,6 +604,38 @@
             </div>
           </div>
 
+        <div class="project-card">
+            <div class="project-banner banner-1">
+                <img src="img/calvi.png" alt="CalVi logo" class="banner-logo">
+            </div>
+            <div class="project-body">
+              <h3>CalVi</h3>
+              <p data-i18n="projCalViDesc">
+                Prosta aplikacja pulpitowa do planowania dnia - kalendarz,
+                zadania, notatki i pogoda w jednym miejscu. Widoki miesiąca,
+                tygodnia i dnia, codzienna lista zadań do odhaczenia, luźne
+                notatki oraz blokada okna chroniąca przed przypadkowymi
+                zmianami. Dane trzymane lokalnie w pliku JSON, pogoda pobierana
+                z darmowego API Open-Meteo.
+              </p>
+              <div class="project-tags">
+                <span class="badge">Java 21</span>
+                <span class="badge">JavaFX</span>
+                <span class="badge">Maven</span>
+                <span class="badge">Jackson</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ImSayvi/CalVi" target="_blank" rel="noopener"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  GitHub</a
+                >
+                <div class="learn-more-btn project-screens-btn">
+                  <i class="fa-solid fa-images"></i> <span data-i18n="projScreens">Zrzuty ekranu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -839,6 +871,33 @@
                 </div>
               </div>
 
+            </div>
+            <div class="hobby-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="hobby-modal flex-center">
+        <div class="hobby-modal-body">
+          <i class="fas fa-times modal-close-btn"></i>
+          <h3 style="margin-bottom: 15px">CalVi - <span data-i18n="previewWord">podgląd</span></h3>
+          <div class="swiper hobby-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-card">
+                  <img
+                    src="img/calvi_scr.png"
+                    alt="CalVi"
+                    onerror="
+                      this.closest('.swiper-slide').classList.add(
+                        'screenshot-placeholder',
+                      )
+                    "
+                  />
+                </div>
+              </div>
             </div>
             <div class="hobby-pagination"></div>
           </div>
