@@ -103,6 +103,8 @@ const translations = {
       "My own take on the iconic Flappy Bird game, written in Java - game logic, collisions, and the scoring system implemented from scratch. Graphics generated with AI assistance and edited in GIMP.",
     projCalViDesc:
       "A simple desktop app for planning your day - calendar, tasks, notes, and weather in one place. Month, week, and day views, a daily checklist, freeform notes, and a window lock to guard against accidental changes. Data is stored locally in a JSON file, weather comes from the free Open-Meteo API.",
+    projRagDesc:
+      "A coursework project from my AI classes at university - a RAG (Retrieval-Augmented Generation) system combining knowledge-base retrieval with a language model. The repository also includes AI/ML fundamentals labs: neural networks, activation functions, recurrent architectures (LSTM/GRU), and model evaluation.",
     projScreens: "Screenshots",
     previewWord: "preview",
 
